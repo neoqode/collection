@@ -1,0 +1,3482 @@
+{
+	"info": {
+		"_postman_id": "fc7cb4e5-e35d-4c72-a1c1-a20e37637296",
+		"name": "DBC Online Collection API's (v1.1)",
+		"description": "**DBC Online API's**",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Walkthroughs",
+					"id": "e06ea4a2-1bb6-481a-8ad9-3ec593f7a79b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "{{language}}"
+							}
+						],
+						"url": "{{server}}/customer/walkthrough"
+					},
+					"response": []
+				},
+				{
+					"name": "Pages",
+					"id": "e129c2ab-02c8-4163-9cbf-5e95569df6d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"url": "{{server}}/customer/static-pages"
+					},
+					"response": []
+				},
+				{
+					"name": "Main Sliders",
+					"id": "8f0feada-98c0-4f2c-ac7a-f7d822edf64e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/main-slider"
+					},
+					"response": []
+				},
+				{
+					"name": "Banners",
+					"id": "b42cde13-3be4-4f66-a430-e6f2c3e9870e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/banners"
+					},
+					"response": []
+				},
+				{
+					"name": "Advance Banners",
+					"id": "cdfced86-42b1-415c-b187-42671737fbdb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"url": "{{server}}/customer/advance-banners"
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Information",
+					"id": "18cdc399-c207-40a6-8c29-11f7e153d409",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"url": "{{server}}/customer/contact-us"
+					},
+					"response": []
+				},
+				{
+					"name": "Social Media Links",
+					"id": "6df4ef86-9f11-42cd-ac9a-a9e1361b7a63",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/follow-us"
+					},
+					"response": []
+				},
+				{
+					"name": "Branches",
+					"id": "1c40efda-6f53-4ab1-9606-6015d47e3d7e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/branches"
+					},
+					"response": []
+				},
+				{
+					"name": "FAQ's",
+					"id": "588a1474-98e5-4585-8243-76b99bc0a34f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/faq"
+					},
+					"response": []
+				}
+			],
+			"id": "fe5f85bb-bb82-4faa-99c4-88e3c7efb892",
+			"description": "Get public data for app",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e8c72dcc-e09e-4b10-8466-1064dc11ab9c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b53bb1e5-dfe2-432c-b287-6a385903840c",
+						"type": "text/javascript",
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {",
+							"    pm.expect(responseJson.code).to.eql(200);",
+							"    pm.expect(responseJson.status).to.eql('success');",
+							"});",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Localization",
+			"item": [
+				{
+					"name": "Governorates",
+					"id": "eea9891c-7f3b-4ec1-8adf-8500d4f883e5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/governorate "
+					},
+					"response": []
+				},
+				{
+					"name": "Cities",
+					"id": "cd5fb672-facf-4a8f-a238-b5738481a77f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/city/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Areas",
+					"id": "8a22ffe2-0448-4ffb-8b1b-c164f5f89ab6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/area/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Free Delivery Rate",
+					"id": "1c902acf-b268-4068-b9f6-1c3442a1dbde",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/setting/free-delivery"
+					},
+					"response": []
+				},
+				{
+					"name": "Dollar -  Iraqi",
+					"id": "89453139-22de-4d60-bca2-05f372038ee3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": "{{server}}/customer/setting/dollar-to-iraqi"
+					},
+					"response": []
+				}
+			],
+			"id": "2dec1845-7112-4aa4-9073-c7f45d3de2fe",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "49b536f9-b69f-4167-94d0-af9058db4074",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a9c96ab6-0171-4312-a0d8-ef97e9d7dfd2",
+						"type": "text/javascript",
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {",
+							"    pm.expect(responseJson.code).to.eql(200);",
+							"    pm.expect(responseJson.status).to.eql('success');",
+							"});",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Catalog",
+			"item": [
+				{
+					"name": "Divisions",
+					"item": [
+						{
+							"name": "List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1a6f8dfe-4078-4fd2-9ea6-6adea0aee26b",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "91e02dbb-e69c-48e6-80c3-ffc8e55441a5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": "{{server}}/customer/division"
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"id": "78879123-d90b-4f4f-83d5-199937438de8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": "{{server}}/customer/division/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Division Products",
+							"id": "369db782-f1c8-4504-8460-034a17da31f9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/customer/product/fetch/division/3?category=&subCategory=&brand=&size=&gender=&minPrice=0.00&maxPrice=75.00&orderBy=price_h_to_l&perPage=24",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"fetch",
+										"division",
+										"3"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "subCategory",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "brand",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "size",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "gender",
+											"value": "",
+											"description": "All=1, Male=2, Female=3"
+										},
+										{
+											"key": "minPrice",
+											"value": "0.00",
+											"description": "$price"
+										},
+										{
+											"key": "maxPrice",
+											"value": "75.00",
+											"description": "$price"
+										},
+										{
+											"key": "orderBy",
+											"value": "price_h_to_l",
+											"description": "default, featured, recommended, rating, price_h_to_l, price_l_to_h"
+										},
+										{
+											"key": "perPage",
+											"value": "24",
+											"description": "24"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "6fc5290d-f398-49c7-b9ab-3f99baebb228"
+				},
+				{
+					"name": "Brands",
+					"item": [
+						{
+							"name": "Normal List",
+							"id": "a29cb38c-3cea-4c88-9970-890f849a8ccb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": "{{server}}/customer/brand/normal"
+							},
+							"response": []
+						},
+						{
+							"name": "Single Normal",
+							"id": "b812c3ed-6fe1-4a02-811c-0c85bd914740",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{server}}/customer/product/brand/54"
+							},
+							"response": []
+						},
+						{
+							"name": "Normal Products",
+							"id": "597291d3-4bee-491c-bb50-5285a66f0772",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/customer/product/fetch/brand/3?category=&subCategory=&brand=&size=&gender=&minPrice=0.00&maxPrice=75.00&orderBy=price_h_to_l&perPage=24",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"fetch",
+										"brand",
+										"3"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "subCategory",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "brand",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "size",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "gender",
+											"value": "",
+											"description": "All=1, Male=2, Female=3"
+										},
+										{
+											"key": "minPrice",
+											"value": "0.00",
+											"description": "$price"
+										},
+										{
+											"key": "maxPrice",
+											"value": "75.00",
+											"description": "$price"
+										},
+										{
+											"key": "orderBy",
+											"value": "price_h_to_l",
+											"description": "default, featured, recommended, rating, price_h_to_l, price_l_to_h"
+										},
+										{
+											"key": "perPage",
+											"value": "24",
+											"description": "24"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Luxury List",
+							"id": "6440d3a7-36b4-427f-b9fd-5fad3a4fa385",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": "{{server}}/customer/brand/luxury"
+							},
+							"response": []
+						},
+						{
+							"name": "Single Luxury",
+							"id": "57562a54-561f-4a18-9427-a7786bb19d03",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{server}}/customer/luxury-brand/7"
+							},
+							"response": []
+						},
+						{
+							"name": "Luxury  Products",
+							"id": "62a78f49-bbfa-4315-b2f3-5f235d7c5a8e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/customer/product/fetch/luxury/7?category=&subCategory=&brand=&size=&gender=&minPrice=0.00&maxPrice=75.00&orderBy=price_h_to_l&perPage=24",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"fetch",
+										"luxury",
+										"7"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "subCategory",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "brand",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "size",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "gender",
+											"value": "",
+											"description": "All=1, Male=2, Female=3"
+										},
+										{
+											"key": "minPrice",
+											"value": "0.00",
+											"description": "$price"
+										},
+										{
+											"key": "maxPrice",
+											"value": "75.00",
+											"description": "$price"
+										},
+										{
+											"key": "orderBy",
+											"value": "price_h_to_l",
+											"description": "default, featured, recommended, rating, price_h_to_l, price_l_to_h"
+										},
+										{
+											"key": "perPage",
+											"value": "24",
+											"description": "24"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "d077639f-cb92-4350-a340-ab445417b799"
+				},
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "List",
+							"id": "44d63bf4-e772-47c6-ba5e-5ecce436dc17",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": "{{server}}/customer/categories"
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"id": "6cbe0082-6506-4725-9c0b-0cf6d28cb8be",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{server}}/customer/product/category/54"
+							},
+							"response": []
+						},
+						{
+							"name": "Category Products",
+							"id": "0d51bec3-629e-46be-b9cd-9090f1e08df8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/customer/product/fetch/category/13?subCategory=&brand=&size=&gender=&minPrice=0.00&maxPrice=75.00&orderBy=price_h_to_l&perPage=24",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"fetch",
+										"category",
+										"13"
+									],
+									"query": [
+										{
+											"key": "subCategory",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "brand",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "size",
+											"value": "",
+											"description": "ID"
+										},
+										{
+											"key": "gender",
+											"value": "",
+											"description": "All=1, Male=2, Female=3"
+										},
+										{
+											"key": "minPrice",
+											"value": "0.00",
+											"description": "$price"
+										},
+										{
+											"key": "maxPrice",
+											"value": "75.00",
+											"description": "$price"
+										},
+										{
+											"key": "orderBy",
+											"value": "price_h_to_l",
+											"description": "default, featured, recommended, rating, price_h_to_l, price_l_to_h"
+										},
+										{
+											"key": "perPage",
+											"value": "24",
+											"description": "24"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "a8401dbe-9a0b-426c-af89-3147dd507457"
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "List By Type",
+							"id": "c7404820-bfb9-4f0e-995a-fd3f529ffef9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/customer/product/get/all?type=new&orderBy=price_h_to_l&perPage=24",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"get",
+										"all"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "new",
+											"description": "new,  hot,  sets"
+										},
+										{
+											"key": "orderBy",
+											"value": "price_h_to_l"
+										},
+										{
+											"key": "perPage",
+											"value": "24"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search",
+							"id": "2dc55678-643d-44f9-8764-2dc078ada482",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/customer/product/get/search?q=Fem&category=&subCategory=&size=&gender=&minPrice=&maxPrice=&orderBy=price_h_to_l&perPage=24",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"get",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "Fem"
+										},
+										{
+											"key": "category",
+											"value": ""
+										},
+										{
+											"key": "subCategory",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "gender",
+											"value": ""
+										},
+										{
+											"key": "minPrice",
+											"value": ""
+										},
+										{
+											"key": "maxPrice",
+											"value": ""
+										},
+										{
+											"key": "orderBy",
+											"value": "price_h_to_l"
+										},
+										{
+											"key": "perPage",
+											"value": "24"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"id": "c269b575-c118-4ace-a353-c9749bfc1d67",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/product/624"
+							},
+							"response": []
+						},
+						{
+							"name": "Related Products",
+							"id": "7acebd6a-72f5-47a6-9547-b6e7a59108a6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/product/related/624"
+							},
+							"response": []
+						}
+					],
+					"id": "ffa80607-ed1a-4faf-977e-66bc09ec6e0c"
+				}
+			],
+			"id": "de54fa71-9edd-42b0-86d8-09bdecab6c21",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "74d253dc-1cec-45f1-9e0c-f785e86964f7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "7d86b880-6a2a-4b16-a7ef-1b2f0fe11d05",
+						"type": "text/javascript",
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {",
+							"    pm.expect(responseJson.code).to.eql(200);",
+							"    pm.expect(responseJson.status).to.eql('success');",
+							"});",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Social Login",
+					"item": [
+						{
+							"name": "Facebook",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ddcd5864-5300-45b1-ad42-9c46de306e35",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.access_token);\r",
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    //parse the response JSON and test three properties\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "f933994b-8962-4aab-8b2a-32ef0ad499a6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "facebook_token",
+											"value": "EAACSnXZCbk5IBAD0g37YBUvd9v4qu3wXYB3azgumHwv2IP3s9husUyrGdihMWZA21wbq1frFJirdfsDcZAD1urcKflcMQ76WsZAOGTwa0BbmCIpJ284keNuMjWeUnOluIvo5e87LJ9vnaXr0bPfyoYhMVbZAtDroPhpT6gv2AmNpRocqEzWcg6IuVYqi1ry0ZBJWtM4RZCIjjLz0fldBNS0ZCVJRDQmnwM61h6CyyqQ4SVAk2uojfOCX\n",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "074a322a-4dc7-11eb-ae93-0242ac130002",
+											"description": "fcm token*",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/facebook/login"
+							},
+							"response": []
+						},
+						{
+							"name": "Google",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a543be2c-55b0-4722-8012-8af8d3e15788",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.access_token);\r",
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    //parse the response JSON and test three properties\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "5f7c4c0c-4909-4c00-9d71-7f547920f8bc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "google_token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImZkMjg1ZWQ0ZmViY2IxYWVhZmU3ODA0NjJiYzU2OWQyMzhjNTA2ZDkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4MTM3NTQwNDEzOS1jNmw4MHNwODljdG82M2Jkb25uZHRzNWlocXFobWVrci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjgxMzc1NDA0MTM5LTdzb3EzdXVlOGFzamlqODhrbWlrZWhrYTcwODM4bjVzLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE0NzE5NDAxNzA5MTMyMDEzNTE1IiwiZW1haWwiOiJ0ZXN0cWlvdGljQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUWlvdGljIFRlc3QiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy1tanBsd1lyWVBZNC9BQUFBQUFBQUFBSS9BQUFBQUFBQUFBQS9BTVp1dWNuMkc0LUlMZUMtNWZKWi1SUjVpNnI2bWpyYTdBL3M5Ni1jL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJRaW90aWMiLCJmYW1pbHlfbmFtZSI6IlRlc3QiLCJsb2NhbGUiOiJlbiIsImlhdCI6MTYxMzM5MDk2OCwiZXhwIjoxNjEzMzk0NTY4fQ.Mo6RTuseOT69GseibHJE1roCRWUcGlWTI49CFv1a8vi1-WPlC8UQE3eDs2gGm436gE7-re0u6M1Z9Q_HrxDXXsOqUQhEs-ecl0FGp5O4mwMMaslh0Qy32Q1-WfwQTrSnaa_Kc5IUNU-klG3pkq32R8JVNWjD7DGYG4kHq7m9RCOfz6H5CtuHooit0RWZEaleIssm_HBuVEJQdnUY2jK1nQJTtGWcLBomPdDmusNgSfo8qEfwhQqmb-Xebk7K70lQu4Mtlp8pERnod6hlTb9DuAmLO25bBAWp7ILBVeaSCrV6jpnIld5Ie-B4OI0xa62y-xWjbkbXtEmVbtR_SlBHKQ",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "074a322a-4dc7-11eb-ae93-0242ac130002",
+											"description": "fcm token*",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/google/login"
+							},
+							"response": []
+						},
+						{
+							"name": "Apple",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "83c7804f-8659-487e-85c8-8b44663758af",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.access_token);\r",
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    //parse the response JSON and test three properties\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "57034fd4-af2d-4767-a81f-f13e1828b528",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "providerId",
+											"value": "116801298493589401293",
+											"type": "text"
+										},
+										{
+											"key": "first_name",
+											"value": "Kareem",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "tubishat",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "074a322a-4dc7-11eb-ae93-0242ac130002",
+											"description": "fcm token*",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/apple/login"
+							},
+							"response": []
+						},
+						{
+							"name": "Link Account",
+							"id": "f5b7d277-893e-4c2f-a0e3-f62d75d4ce5a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "provider_id",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "provider",
+											"value": "facebook",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/social/link"
+							},
+							"response": []
+						}
+					],
+					"id": "df484a35-61c1-46d6-941b-5851d2369578"
+				},
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6050a31b-ad94-4ff5-824f-af55dcd87895",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    //parse the response JSON and test three properties\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "170ee035-f7de-433a-a846-699081dc6e52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "962788847499",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"description": "required|min:6",
+									"type": "text"
+								},
+								{
+									"key": "rpassword",
+									"value": "123456",
+									"description": "required|same:password",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Nael",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Awadallah",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nael@neoqode.com",
+									"type": "text"
+								},
+								{
+									"key": "birthdate",
+									"value": "1991-06-24",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"type": "text",
+									"description": "1 = male , 2 = female"
+								}
+							]
+						},
+						"url": "{{server}}/customer/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d7cb2eaf-aced-46a8-ae88-3b30050b6908",
+								"exec": [
+									"\r",
+									"if(pm.response.json().data){\r",
+									"    postman.setEnvironmentVariable(\"customer_bearer_token\", pm.response.json().data.token.access_token);\r",
+									"    pm.globals.set(\"token\", pm.response.json().data.token.access_token);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "cc9c3565-b480-4d96-865d-b753a75939c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "962788847499",
+									"description": "phone_number or username",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "fcm_token",
+									"value": "174a322a-4dc7-11eb-ae93-0242ac130002",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "{{server}}/customer/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Verify SMS",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ce923846-6059-416d-8b07-c788f87e06e5",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "739cdedf-8bb6-45e3-a6c4-c8655c0f2d5e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "962788847499",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "9423",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/customer/verify-sms"
+					},
+					"response": []
+				},
+				{
+					"name": "Resend SMS",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "22788922-5cb5-4ff4-a091-ad4d8053aa1d",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "faaf4b73-e78a-497a-bec9-59ec92da7623",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "962788847499",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/customer/resend-sms"
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7ec2487a-58ee-4127-88a7-2c717353324b",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "029da55d-f7d7-4f6b-be77-98cda14e4dfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "962788847499",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/customer/forget-password"
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "75420e4a-25d9-45a6-9e7f-58cbddf441cc",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9948f561-8293-4a76-8de8-bd93915de0b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "962788847499",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "1234567",
+									"description": "required|min 6",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "1234567",
+									"description": "required|same:password",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/customer/reset-password"
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "724e3df4-798a-4dd0-aa07-12c31db39946",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b570ebcb-f7e7-4ca7-9929-62a34e36ad13",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}",
+								"password": "{{{{bearer-token}}}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "old_password",
+									"value": "123456",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "1234567",
+									"description": "required|min:6|different:old_password",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "1234567",
+									"description": "required|same:new_password",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/customer/change-password"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6f4015e6-b585-4beb-88c8-f4dda7582d18",
+								"exec": [
+									"postman.setEnvironmentVariable(\"customer_bearer_token\", \"-\");\r",
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b1b73564-b242-4df7-95db-16d84b6711d6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{server}}/customer/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout From Other Devices",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fd6e8397-f2be-4374-b160-411e0aa62192",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8a381593-da4a-4b20-85b2-d12502672191",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{server}}/customer/logout/other-devices"
+					},
+					"response": []
+				}
+			],
+			"id": "aad0aabe-10fb-496f-be08-db0bc1f99ad0"
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4bea4890-e0ee-4d81-8f0c-d76c096e06cb",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "ed4c83c5-e3ca-4498-b85f-bfbde8869f58",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/profile"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ab736bad-efe0-4bce-bae0-ca32680d1265",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "de4e42c8-a290-4f92-b582-73971cf4c96a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}",
+										"password": "{{{{bearer-token}}}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "Nael",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Awadallah",
+											"type": "text"
+										},
+										{
+											"key": "birthdate",
+											"value": "1991-06-24",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/user/Pictures/test.jpg"
+										},
+										{
+											"key": "fcm_token",
+											"value": "174a322a-4dc7-11eb-ae93-0242ac130002",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "nael@neoqode.com",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "1",
+											"type": "text",
+											"description": "1 = male , 2 = female"
+										}
+									]
+								},
+								"url": "{{server}}/customer/profile"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Phone Number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8daa99dd-56bf-4ad1-8942-9ccaa4ff3de4",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "1e868199-12ee-45f9-9628-2e2e755c9c6a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}",
+										"password": "{{{{bearer-token}}}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962788847499",
+											"description": "required|unique",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/profile/update-username"
+							},
+							"response": []
+						}
+					],
+					"id": "694d2618-6d3a-4a79-9ab2-791f35893e49"
+				},
+				{
+					"name": "Notifications",
+					"item": [
+						{
+							"name": "List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ee7d0fbf-2d61-4cda-bbe2-d7059b44098b",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "7604922a-7b74-4007-ae34-81bf9ef66bd2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/notification"
+							},
+							"response": []
+						},
+						{
+							"name": "Read",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7fa939e7-bffc-4827-bc56-8af346ccf4ff",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "d6a8799e-b134-4b39-8f61-e2dbce4cfaf8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/notification/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Enable Notifications",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60127206-943a-451d-a652-f983232714e9",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "da14e74a-2a93-4c21-aa4c-64eb94fa9041",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"password": "{{{{bearer-token}}}}",
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fcm_token",
+											"value": "174a322a-4dc7-11eb-ae93-0242ac130002",
+											"description": "*fcm_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/receive-notification"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "df23fd93-45ed-4c5c-9ac5-a29a0b25a620",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "0e7ca6ac-7701-43cc-9341-c1e91710ee2e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/notification/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete All",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "07ae692a-d6fb-4772-b07b-e5ea999c36d9",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "6a5e37db-6293-4c03-8538-e225f1ef7ab5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "en"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/notification/delete-all"
+							},
+							"response": []
+						}
+					],
+					"id": "76ac040d-2b38-40c7-9b41-e1874051f3a0",
+					"auth": {
+						"type": "bearer",
+						"bearer": {
+							"token": "{{customer_bearer_token}}"
+						}
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "33a31cc1-887c-4c61-814e-999d0dbaed89",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "d70be9c6-d138-4f20-b123-0561c9e33fb4",
+								"type": "text/javascript",
+								"exec": [
+									"const responseJson = pm.response.json();",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {",
+									"    pm.expect(responseJson.code).to.eql(200);",
+									"    pm.expect(responseJson.status).to.eql('success');",
+									"});"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Addresses",
+					"item": [
+						{
+							"name": "List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4a598942-9ae2-47c9-ba88-a9e608df9b44",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "b3a20d1b-3546-4607-8e39-4385584d794d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/address"
+							},
+							"response": []
+						},
+						{
+							"name": "Show",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e8f6fe30-9d0c-4271-8716-22f697eaf6a8",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "30f5bbdb-bfc5-4dc0-bef4-385c5c81e964",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "{{server}}/customer/address/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8eabdaae-88fb-4386-9dba-915e866f0899",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "86504918-5f96-4cf7-a8f9-df8f4a9684a6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Test\",\r\n    \"governorate\" : 1,\r\n    \"city\" : 1,\r\n    \"area\" : 1,\r\n    \"mahala\" : \"Wasfi Al Tal Street\",\r\n    \"zoqaq\" : \"12\",\r\n    \"dar\" : \"9\",\r\n    \"phone_number\" : \"962797803934\",\r\n    \"lat\" : \"12\",\r\n    \"lon\" : \"12\",\r\n    \"region_id\": \"cABXRPle08s=\",\r\n    \"city_id\":\"M5ltI0k+yXg=\"    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{server}}/customer/address"
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "78b30753-f19c-4aed-8788-a8e4a096dca7",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "47d2976d-4e44-49e0-b51c-eeaca11906c4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Work\",\r\n    \"city\" : 1,\r\n    \"area\" : 1,\r\n    \"governorate\" : 1,\r\n    \"mahala\" : \"Wasfi Al Tal Street\",\r\n    \"zoqaq\" : \"12\",\r\n    \"dar\" : \"9\",\r\n    \"phone_number\" : \"962797803934\",\r\n    \"latitude\" : \"12\",\r\n    \"longitude\" : \"12\"     \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{server}}/customer/address/320"
+							},
+							"response": []
+						},
+						{
+							"name": "Set Default",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b87b4160-c3eb-48c9-9dfb-03aeeb2d7d59",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "dad1a612-0ecf-4e32-9b96-7f03edb9eb1d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": "{{server}}/customer/address/320"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d4741f7b-c0bb-4ca5-b712-d5c62147047d",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "544cfb1d-1b18-4799-a080-0d10b2da6f01",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": "{{server}}/customer/address/321"
+							},
+							"response": []
+						}
+					],
+					"id": "1314821d-85f0-4ce9-ab7c-643c37ecd05d"
+				},
+				{
+					"name": "Messaging",
+					"item": [
+						{
+							"name": "List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1a7129d8-bd4b-403e-a21e-654443f447e1",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "bfc2417f-e168-4ee0-9241-4c97f2521bd0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "{{server}}/customer/messages/list"
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a8393169-9f43-4a45-8566-335262f3fd19",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "dec2aff2-ea61-4d43-8969-805b29e497f4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "message",
+											"value": "Hey",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/admin/send-message"
+							},
+							"response": []
+						}
+					],
+					"id": "14d9159b-e6fa-418c-bcde-f38b78922604"
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "cefdcae1-ce9e-4680-931f-55e52e038685",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "6004bc90-b636-4b37-b6d3-23590fa0c5d2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{server}}/customer/order",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"order"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "2",
+											"description": "Pending = 1;\nCanceled = 3;\nCompleted = 5;\n\nDefault all",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "63848991-399d-42a3-8ff5-d58cc7d9d755",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "02cd3972-8848-4c2e-a3da-ff2bfaf3cd86",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": "{{server}}/customer/order/10"
+							},
+							"response": []
+						},
+						{
+							"name": "Reorder",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8c0d25de-06b7-48bd-924f-54276dd37a2b",
+										"exec": [
+											"const responseJson = pm.response.json();\r",
+											"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+											"    pm.expect(responseJson.code).to.eql(200);\r",
+											"    pm.expect(responseJson.status).to.eql('success');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "7260e539-7227-4b63-a096-adb1af725784",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{customer_bearer_token}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{server}}/customer/re-order"
+							},
+							"response": []
+						}
+					],
+					"id": "c3ba8654-9a69-42d0-a511-8e79bf1b969e"
+				}
+			],
+			"id": "7d031956-1eb7-47c9-9923-3dbcab97b7c2"
+		},
+		{
+			"name": "Wishlist",
+			"item": [
+				{
+					"name": "List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "97433086-482d-4178-bd73-30827308c20b",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "79a72a79-1374-4d91-a6c6-c886bb278d0c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{server}}/customer/wishlist/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "576bd843-501a-4993-a1a9-5b77bd7eddf0",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "be0b6c52-7659-494e-b3c2-db1287e69bbf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}/customer/wishlist"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b28ddc4b-254c-47ad-9268-f2404bfb53f2",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7bca823a-fb19-4d61-b483-bbce32794a1d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": "{{server}}/customer/wishlist/760"
+					},
+					"response": []
+				}
+			],
+			"id": "c8fe76b6-9fd6-43c8-9e4e-3ea6463e5edb"
+		},
+		{
+			"name": "Favorites",
+			"item": [
+				{
+					"name": "List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "089284f1-9214-4ced-b3a7-5dbb903a1f76",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "19ac0225-e8f4-445f-bdf9-237ede786518",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "{{server}}/customer/favorite/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1fcb21d6-fa94-4f5c-8c3d-ee9d6e04426b",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ea67e657-ace3-44ba-af34-864ce0b70964",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}/customer/favorite"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "49891f8f-23b1-47f5-9ff8-0f3bbbc6b97f",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "d24a3623-6634-4bf4-9646-c7b58284723e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": "{{server}}/customer/favorite/1893"
+					},
+					"response": []
+				}
+			],
+			"id": "b46fee53-06ee-4017-89d6-c3449b3e6ce5"
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2c918d69-eddb-4fc0-bfed-946e9703f5e4",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "58be4850-c145-4010-8f93-b39d1cd93fbf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rate_type",
+									"value": "product",
+									"description": "product,influencer,store",
+									"type": "text"
+								},
+								{
+									"key": "rate_type_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "5",
+									"description": "1,2,3,4,5",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Good",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/customer/review"
+					},
+					"response": []
+				}
+			],
+			"id": "ec3d842b-ba27-4fa3-8a9b-d702064e3741"
+		},
+		{
+			"name": "Checkout",
+			"item": [
+				{
+					"name": "Check Cart Items",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3bfcd819-9afa-4ac6-9432-08f2efbd2efb",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "77eb539c-9480-4eeb-ae58-b0e856a43258",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_address_id\":19,\r\n    \"products\": [\r\n        {\r\n            \"product_id\": 8090,\r\n            \"product_qty\": 3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}/customer/order/cart"
+					},
+					"response": []
+				},
+				{
+					"name": "Apply Coupon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ffb6ad1f-ad63-48cd-82ba-31470cb3f9f8",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "163c982d-3f19-41d2-bfa5-9dc487d2da71",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "{{server}}/customer/check-coupon/red123"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e60e4043-01ca-4686-888a-5ccd9b8a51b0",
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {\r",
+									"    pm.expect(responseJson.code).to.eql(200);\r",
+									"    pm.expect(responseJson.status).to.eql('success');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "aecc678d-20fc-4f25-b072-804f8be46a91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{customer_bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_address_id\":322,\r\n    \"lang\":\"ar\",\r\n    \"currency\":\"IQD\",\r\n    \"currency_rate\":1500,\r\n    \"coupon_code\":\"red123\",\r\n    \"shipping_amount\":3.00,\r\n    \"order_notes\":\"test notes\",\r\n    \"order_source\":\"iOS\", \r\n    \"products\": [\r\n        {\r\n            \"product_id\": 13980,\r\n            \"product_qty\": 1,\r\n            \"product_price\": 7.15\r\n        },\r\n        {\r\n            \"product_id\": 13979,\r\n            \"product_qty\": 1,\r\n            \"product_price\": 5.90\r\n        }\r\n    ],\r\n    \"billing_address\":\r\n        {\r\n            \"name\":\"Home\",\r\n            \"governorate_id\" : 1,\r\n            \"city_id\" : 1,\r\n            \"area_id\" : 1,\r\n            \"mahala\" : \"Wasfi Al Tal Street\",\r\n            \"zoqaq\" : \"12\",\r\n            \"dar\" : \"9\",\r\n            \"phone_number\" : \"962797803934\" ,\r\n            \"latitude\" : \"12\",\r\n            \"longitude\" : \"12\"\r\n        }\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}/customer/order"
+					},
+					"response": []
+				}
+			],
+			"id": "92101a3b-d77a-4259-a726-b05f5d46b8bc"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bc36472b-4c8c-4557-a4d5-61c274afc186",
+				"type": "text/javascript",
+				"exec": [
+					"var appEnv = pm.collectionVariables.get(\"env\");",
+					"if(appEnv === 'production'){",
+					"    pm.globals.set(\"server\", pm.collectionVariables.get(\"production\"));",
+					"}else if(appEnv === 'local'){",
+					"    pm.globals.set(\"server\", pm.collectionVariables.get(\"local\"));",
+					"}",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b1a1f840-bf52-4533-87e5-06be3dfbafef",
+				"type": "text/javascript",
+				"exec": [
+					"// const responseJson = pm.response.json();",
+					"// pm.test(responseJson.message + \" // Code: \" +responseJson.code, () => {",
+					"//     pm.expect(responseJson.code).to.eql(200);",
+					"//     pm.expect(responseJson.status).to.eql('success');",
+					"// });",
+					"pm.test(\"Content-Type is present\", function () {",
+					"    pm.response.to.have.header(\"Content-Type\");",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e1df5545-5d7a-457f-8b09-15f4102c5209",
+			"key": "local",
+			"value": "http://dhifaf.test/api",
+			"type": "string"
+		},
+		{
+			"id": "9eed54b0-fa5d-4fb2-86a3-3d33a54136d0",
+			"key": "production",
+			"value": "https://dhifaf.online/api",
+			"type": "string"
+		},
+		{
+			"id": "aff9bcd9-3dd7-4e22-b384-5930347653d1",
+			"key": "customer_bearer_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "2054a60c-1c41-4347-9479-18ceaea5dec4",
+			"key": "env",
+			"value": "local",
+			"type": "string"
+		},
+		{
+			"id": "566080a7-1ebb-40ef-9213-f38a502653ef",
+			"key": "language",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
