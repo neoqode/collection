@@ -267,7 +267,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{server}}/customer/governorate "
+						"url": "{{server}}/customer/governorate"
 					},
 					"response": []
 				},
@@ -3449,31 +3449,31 @@
 	],
 	"variable": [
 		{
-			"id": "e1df5545-5d7a-457f-8b09-15f4102c5209",
+			"id": "54e8ccdd-d11f-41dc-b628-22b0e1334423",
 			"key": "local",
 			"value": "http://dhifaf.test/api",
 			"type": "string"
 		},
 		{
-			"id": "9eed54b0-fa5d-4fb2-86a3-3d33a54136d0",
+			"id": "d76580e1-03f9-4a04-b17f-68f5980ae615",
 			"key": "production",
 			"value": "https://dhifaf.online/api",
 			"type": "string"
 		},
 		{
-			"id": "aff9bcd9-3dd7-4e22-b384-5930347653d1",
+			"id": "f8e059bf-2aa8-4261-90b5-ccf604d845eb",
 			"key": "customer_bearer_token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2054a60c-1c41-4347-9479-18ceaea5dec4",
+			"id": "f466d729-246f-421c-b13b-8e684c3fe635",
 			"key": "env",
 			"value": "local",
 			"type": "string"
 		},
 		{
-			"id": "566080a7-1ebb-40ef-9213-f38a502653ef",
+			"id": "0bd94bb0-1977-41e6-be3c-2f696ca58790",
 			"key": "language",
 			"value": "",
 			"type": "string"
